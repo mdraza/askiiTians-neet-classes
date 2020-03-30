@@ -345,6 +345,12 @@ p span {
   font-size: 18px;
 }
 
+@media (max-width: 576px) {
+  .slider-sec .responsive-header-sec .res-head-list ul li {
+    font-size: 14px;
+  }
+}
+
 .slider-sec .responsive-header-sec .res-head-list ul li span:empty {
   width: 13px;
   height: 13px;
@@ -355,6 +361,14 @@ p span {
   color: #333333;
   -webkit-box-shadow: 0 1px 3px rgba(128, 128, 128, 0.2);
           box-shadow: 0 1px 3px rgba(128, 128, 128, 0.2);
+}
+
+@media (max-width: 576px) {
+  .slider-sec .responsive-header-sec .res-head-list ul li span:empty {
+    width: 10px;
+    height: 10px;
+    margin-right: 0px;
+  }
 }
 
 /*-----------Course Section--------------*/

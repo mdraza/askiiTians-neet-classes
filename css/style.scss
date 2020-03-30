@@ -337,6 +337,9 @@ $primary-color: #f47408;
                     margin-left: 16px;
                     margin-top: 8px;
                     font-size: 18px;
+                    @media (max-width:576px) {
+                        font-size: 14px; 
+                    }
                     span:empty {
                         width: 13px;
                         height: 13px;
@@ -347,6 +350,11 @@ $primary-color: #f47408;
                         display: inline-block;
                         color: #333333;
                         box-shadow: 0 1px 3px rgba(128, 128, 128, 0.2);
+                        @media (max-width:576px) {
+                            width: 10px;
+                            height: 10px;
+                            margin-right: 0px;
+                        }
                     }
 
                 }
