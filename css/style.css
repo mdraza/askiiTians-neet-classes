@@ -347,7 +347,7 @@ p span {
 
 @media (max-width: 576px) {
   .slider-sec .responsive-header-sec .res-head-list ul li {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
@@ -365,9 +365,9 @@ p span {
 
 @media (max-width: 576px) {
   .slider-sec .responsive-header-sec .res-head-list ul li span:empty {
-    width: 10px;
-    height: 10px;
-    margin-right: 0px;
+    width: 12px;
+    height: 12px;
+    margin-right: 3px;
   }
 }
 
