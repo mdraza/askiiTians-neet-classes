@@ -75,6 +75,75 @@ $primary-color: #f47408;
     }
 }
 
+/*--------- Modal --------*/
+.modal.in .modal-dialog {
+    transform: translate(0,120px);
+}
+.modal {
+    // width: 75%;
+    .modal-dialog {
+        // transform: translate(0,120px);
+        .modal-content {
+            .modal-header {
+                border-bottom: none;
+                h3 {
+                    padding: 0 5px;
+                    span {
+                        color: $primary-color;
+                    }
+                }
+            }
+
+            .modal-body {
+                padding: 0px 20px 20px;
+                float: right;
+                border-radius: 10px;
+                box-sizing: border-box;
+                width: 100%;
+
+                h3 {
+                    color: #fff;
+                    padding: 0px 0 15px;
+
+                    span {
+                        color: $primary-color;
+                    }
+                }
+
+                .form-group {
+                    position: relative;
+
+                    #grade {
+                        padding: 6px 25px;
+                    }
+
+                    input {
+                        padding: 0 30px;
+                    }
+
+                    img {
+                        width: 15px;
+                        height: 15px;
+                        position: absolute;
+                        top: 10px;
+                        left: 8px;
+                    }
+                }
+
+                .btn {
+                    background: #68c721;
+                    border: none;
+                    color: #fff;
+
+                }
+            }
+            .modal-footer {
+                border-top: none;
+            }
+        }
+    }
+}
+
 /*-----------Slider Section--------------*/
 .slider-sec {
     background-image: url('../images/slider-img.png');
@@ -86,72 +155,8 @@ $primary-color: #f47408;
     @media (max-width:576px) {
         padding: 10px 0 60px;
     }
-    .modal.in .modal-dialog {
-        transform: translate(0,120px);
-    }
-    .modal {
-        .modal-dialog {
-            // transform: translate(0,120px);
-            .modal-content {
-                .modal-header {
-                    border-bottom: none;
-                    h3 {
-                        padding: 0 5px;
-                        span {
-                            color: $primary-color;
-                        }
-                    }
-                }
 
-                .modal-body {
-                    padding: 0px 20px 20px;
-                    float: right;
-                    border-radius: 10px;
-                    box-sizing: border-box;
-                    width: 100%;
-
-                    h3 {
-                        color: #fff;
-                        padding: 0px 0 15px;
-
-                        span {
-                            color: $primary-color;
-                        }
-                    }
-
-                    .form-group {
-                        position: relative;
-
-                        #grade {
-                            padding: 6px 25px;
-                        }
-
-                        input {
-                            padding: 0 30px;
-                        }
-
-                        img {
-                            width: 15px;
-                            height: 15px;
-                            position: absolute;
-                            top: 10px;
-                            left: 8px;
-                        }
-                    }
-
-                    .btn {
-                        background: #68c721;
-                        border: none;
-                        color: #fff;
-
-                    }
-                }
-                .modal-footer {
-                    border-top: none;
-                }
-            }
-        }
-    }
+    
 
     .slider-txt {
 
@@ -494,7 +499,8 @@ $primary-color: #f47408;
 
         .cd-sec {
             margin-top: 30px;
-
+            transition: 0.5s;
+            
             .cd-box {
                 padding: 20px;
                 text-align: center;
@@ -502,6 +508,9 @@ $primary-color: #f47408;
                 height: 250px;
                 border-radius: 5px;
                 transition: 0.5s;
+                &:hover .cd-icon{
+                    transform: translateY(-10px);
+                }
 
                 @media (max-width:576px) {
                     padding: 0;
@@ -516,6 +525,8 @@ $primary-color: #f47408;
                     border-radius: 50%;
                     background-color: #ffffff;
                     margin: auto;
+                    transition: 0.5s;
+                    
 
                     @media (max-width:576px) {
                         width: 70px;

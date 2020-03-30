@@ -75,6 +75,72 @@ p span {
   content: "";
 }
 
+/*--------- Modal --------*/
+.modal.in .modal-dialog {
+  -webkit-transform: translate(0, 120px);
+          transform: translate(0, 120px);
+}
+
+.modal .modal-dialog .modal-content .modal-header {
+  border-bottom: none;
+}
+
+.modal .modal-dialog .modal-content .modal-header h3 {
+  padding: 0 5px;
+}
+
+.modal .modal-dialog .modal-content .modal-header h3 span {
+  color: #f47408;
+}
+
+.modal .modal-dialog .modal-content .modal-body {
+  padding: 0px 20px 20px;
+  float: right;
+  border-radius: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+}
+
+.modal .modal-dialog .modal-content .modal-body h3 {
+  color: #fff;
+  padding: 0px 0 15px;
+}
+
+.modal .modal-dialog .modal-content .modal-body h3 span {
+  color: #f47408;
+}
+
+.modal .modal-dialog .modal-content .modal-body .form-group {
+  position: relative;
+}
+
+.modal .modal-dialog .modal-content .modal-body .form-group #grade {
+  padding: 6px 25px;
+}
+
+.modal .modal-dialog .modal-content .modal-body .form-group input {
+  padding: 0 30px;
+}
+
+.modal .modal-dialog .modal-content .modal-body .form-group img {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 10px;
+  left: 8px;
+}
+
+.modal .modal-dialog .modal-content .modal-body .btn {
+  background: #68c721;
+  border: none;
+  color: #fff;
+}
+
+.modal .modal-dialog .modal-content .modal-footer {
+  border-top: none;
+}
+
 /*-----------Slider Section--------------*/
 .slider-sec {
   background-image: url("../images/slider-img.png");
@@ -88,71 +154,6 @@ p span {
   .slider-sec {
     padding: 10px 0 60px;
   }
-}
-
-.slider-sec .modal.in .modal-dialog {
-  -webkit-transform: translate(0, 120px);
-          transform: translate(0, 120px);
-}
-
-.slider-sec .modal .modal-dialog .modal-content .modal-header {
-  border-bottom: none;
-}
-
-.slider-sec .modal .modal-dialog .modal-content .modal-header h3 {
-  padding: 0 5px;
-}
-
-.slider-sec .modal .modal-dialog .modal-content .modal-header h3 span {
-  color: #f47408;
-}
-
-.slider-sec .modal .modal-dialog .modal-content .modal-body {
-  padding: 0px 20px 20px;
-  float: right;
-  border-radius: 10px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 100%;
-}
-
-.slider-sec .modal .modal-dialog .modal-content .modal-body h3 {
-  color: #fff;
-  padding: 0px 0 15px;
-}
-
-.slider-sec .modal .modal-dialog .modal-content .modal-body h3 span {
-  color: #f47408;
-}
-
-.slider-sec .modal .modal-dialog .modal-content .modal-body .form-group {
-  position: relative;
-}
-
-.slider-sec .modal .modal-dialog .modal-content .modal-body .form-group #grade {
-  padding: 6px 25px;
-}
-
-.slider-sec .modal .modal-dialog .modal-content .modal-body .form-group input {
-  padding: 0 30px;
-}
-
-.slider-sec .modal .modal-dialog .modal-content .modal-body .form-group img {
-  width: 15px;
-  height: 15px;
-  position: absolute;
-  top: 10px;
-  left: 8px;
-}
-
-.slider-sec .modal .modal-dialog .modal-content .modal-body .btn {
-  background: #68c721;
-  border: none;
-  color: #fff;
-}
-
-.slider-sec .modal .modal-dialog .modal-content .modal-footer {
-  border-top: none;
 }
 
 .slider-sec .slider-txt h1 {
@@ -492,6 +493,8 @@ p span {
 
 .course-section .course-details .cd-sec {
   margin-top: 30px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .course-section .course-details .cd-sec .cd-box {
@@ -502,6 +505,11 @@ p span {
   border-radius: 5px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+.course-section .course-details .cd-sec .cd-box:hover .cd-icon {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
 }
 
 @media (max-width: 576px) {
@@ -517,6 +525,8 @@ p span {
   border-radius: 50%;
   background-color: #ffffff;
   margin: auto;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 @media (max-width: 576px) {
