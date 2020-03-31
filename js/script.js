@@ -25,5 +25,5 @@ $('#play-video').on('click', function(e){
         }
     }
 });
-  /*---------- AOS Animation Init ---------*/
-//   AOS.init();
+  /*---------- WOW Animation Init ---------*/
+  new WOW().init();
